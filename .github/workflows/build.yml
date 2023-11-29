@@ -1,0 +1,9 @@
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Dependencies
+        run: yarn install
+      - name: Build Site
+        run: yarn build
